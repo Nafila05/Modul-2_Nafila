@@ -5,6 +5,7 @@ const router = express.Router()
 const usercontroller = require('../contollers/user')
 
 router.get('/users', usercontroller.index)
+router.get('/user/:id', usercontroller.show)
 
   router.post('/users', usercontroller.store)
 
